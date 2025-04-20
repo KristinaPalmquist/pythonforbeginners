@@ -22,6 +22,6 @@ values = Reference(sheet,
           max_col=4)
 chart = BarChart()
 chart.add_data(values)
-sheet.add_chart(chart, 'e2')
+sheet.add_chart(chart, 'f2')
 
 wb.save('transactions2.xlsx')
