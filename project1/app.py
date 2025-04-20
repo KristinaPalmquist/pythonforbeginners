@@ -1,8 +1,5 @@
 import openpyxl as xl
 from openpyxl.chart import BarChart, Reference
-
-
-
 # from pathlib import Path
 
 # filep = Path('transactions.xlsx')
@@ -11,7 +8,7 @@ from openpyxl.chart import BarChart, Reference
 wb = xl.load_workbook('transactions.xlsx')
 sheet = wb['Sheet1']
 cell = sheet['a1']
-sheet.cell(1, 1)
+# sheet.cell(1, 1)
 for row in range(2, sheet.max_row + 1):
     cell = sheet.cell(row, 3)
     corrected_price = cell.value * 0.9
