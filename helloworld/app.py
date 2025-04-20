@@ -345,12 +345,180 @@
 
 
 # functions
-def greet_user(name):
-    print(f'Hi there {name}!')
-    print('Welcome aboard')
+# def greet_user(name):
+#     print(f'Hi {name}!')
+#     print('Welcome aboard')
+# from greet_user import greet_user
+
+# def greet_user(first_name, last_name):
+#     print(f'Hi {first_name} {last_name}!')
+#     print('Welcome aboard')
+
+# print('Start')
+# greet_user('Anna', 'Johnson') # positional argumnents
+# greet_user(last_name = 'Smith', first_name = 'Jack') # keyword arguments
+# print('Finish')
 
 
-print('Start')
-greet_user('Anna')
-greet_user('Seb')
-print('Finish')
+# def square(number):
+#     # return number * number
+#     return number ** 2
+
+
+# print(square(4))
+# result = square(int(input('>')))
+# print(result)
+
+#exceptions
+# age = int(input('Age: '))
+# print(age)
+
+# try:
+#     age = int(input('Age: '))
+#     income = 20000
+#     risk = income / age
+#     print(age)
+# except ValueError: # exception - crashes program
+#     print('Invalid value')
+# except ZeroDivisionError:
+#     print("0 is not a valid age")
+# print('Done')
+
+
+# # Classes
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#     def move(self):
+#         print('Move')
+#     def draw(self):
+#         print('Draw')
+
+
+# # point1 = Point()
+# # point1.x = 10
+# # point1.y = 21
+# # point1.draw()
+# # point1.move()
+# # print(point1.x)
+
+# # point2 = Point()
+# # point2.x = 23
+# # point2.y = 14
+# # print(point2.y)
+# point = Point(14, 21)
+# point.x = 13
+# print(point.x)
+
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#     def talk(self):
+#         # return (f'Hello my name is {self.name}!')
+#         # print('talk')
+#         print(f'Hello my name is {self.name}!')
+
+
+# me = Person('Kristina Palmquist')
+# # print(me.name)
+# me.talk()
+# bob = Person('Bob Smith')
+# bob.talk()
+
+
+# #inheritance
+# class Mammal:
+#     def walk(self):
+#         print('Walk')
+
+
+# class Dog(Mammal):
+#     def bark(self):
+#         print('Bark')
+
+
+# class Cat(Mammal):
+#     def meow(self):
+#         print('Meow')
+
+
+# h = Dog()
+# h.walk()
+# h.bark()
+
+# k = Cat()
+# k.walk()
+# k.meow()
+
+
+# # #modules
+# # # import converters
+# # # print(converters.kg_to_lbs(80))
+
+# # from converters import  kg_to_lbs
+# # print(kg_to_lbs(100))
+
+# import utils
+# numbers = [37, 45, 1, 2, 89, 56, 3, 4, 128, 7, 5, 38, 43, 6, 7, 789, 8, 9]
+# # utils.find_max(numbers)
+# # utils.find_min(numbers)
+# print(utils.find_max(numbers))
+# print(max(numbers))
+
+# # Packages
+# # import ecommerce.shipping
+# # ecommerce.shipping.calc_shipping()
+
+# # from ecommerce.shipping import calc_shipping
+# # calc_shipping()
+
+# from ecommerce import shipping
+# shipping.calc_shipping()
+
+# # built in modules
+# # search online for: python 3 module index
+# import random
+# import math
+# # for i in range(3):
+# #     print(f'{i + 1}: {math.floor(random.random() * 100)}%')
+# #     print(random.randint(1, 100))
+# # members = ['John', 'Jack', 'Sarah', 'Mary Celeste']
+# # leader = (random.choice(members))
+# # print(leader)
+
+# import dice
+
+# # die1 = dice.Dice()
+# # die2 = dice.Dice()
+# # print(f'({die1.roll()}, {die2.roll()})')
+# # print(type(die1.numbers))
+# dice = dice.Dice()
+# roll1 = dice.roll()
+# print(roll1)
+
+
+
+# # Files and directories
+# from pathlib import Path
+# import os
+# # absolute path
+# # /usr/local/bin/...
+
+# # relative path
+# path1 = Path("ecommerce")
+# # print(path1.exists())
+# path2 = Path('email')
+# # print(path2.mkdir())
+# # print(path2.rmdir())
+# path3 = Path()
+# print(path3)
+# for file in path3.glob('*'):
+#     print(file)
+
+
+# PyPI and Pip
+# Standard Python library + 
+# PyPI - Python Package Index - packages built by users
+# 
