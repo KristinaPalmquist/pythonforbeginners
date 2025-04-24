@@ -24,4 +24,15 @@ Scikit-Learn - provides common algorithms (decision tree, neural networks etc.)
 
 for machine learning Jupyter is used to write code
 
+importing a data set
+www.kaggle.com
+
+
+online music store
+ask for age and gender
+recommend various music albums they're likely to buy
+music category => suggestions to the user
+http://bit.ly/music-csv
+
+
 
